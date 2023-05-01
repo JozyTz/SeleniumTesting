@@ -14,7 +14,7 @@ public class BaseTest
 
     @BeforeAll
     public static void setupTest() {
-        System.setProperty("webdriver.chrome.driver", "C:/Users/jonsx/OneDrive/Desktop/417_Selenium/SeleniumTesting417/edgedriver_win32/msedgedriver.exe");
+        System.setProperty("webdriver.chrome.driver", "/edgedriver_win32/msedgedriver.exe");
         driver = new EdgeDriver();
     }
 
