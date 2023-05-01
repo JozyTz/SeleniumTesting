@@ -18,9 +18,9 @@ public class HomePage extends BasePage
     super(driver);
   }
 
-  String itemQuantityXpath = "//div[@class='item-quantity']/p";
-  String addButtonXpath = "//button[@class='btn btn-add-item']";
-  String subtractButtonXpath = "//button[@class='btn btn-subtract-item']";
+  private final static String itemQuantityXpath = "//div[@class='item-quantity']/p";
+  private final static String addButtonXpath = "//button[@class='btn btn-add-item']";
+  private final static String subtractButtonXpath = "//button[@class='btn btn-subtract-item']";
 
   private String getProductCardXpath(String productName)
   {
