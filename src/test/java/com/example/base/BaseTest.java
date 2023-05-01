@@ -20,7 +20,7 @@ public class BaseTest
 
     @BeforeEach
     public void setupBrowser() {
-        driver.get("localhost:3000");
+        driver.get("http://localhost:3000/");
     }
 
     @AfterEach
