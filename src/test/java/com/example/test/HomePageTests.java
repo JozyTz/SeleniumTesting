@@ -21,7 +21,9 @@ public class HomePageTests extends BaseTest
     {
         String productName = "Blitzing Cap";
         boolean countIncremented = homePage.incrementProductCount(productName, 5);
+        boolean countIncremented2 = homePage.incrementProductCount(productName, 3);
         Assertions.assertTrue(countIncremented, "Product count was not incremented when clicking the button");
+        Assertions.assertTrue(countIncremented2, "Product count was not incremented correctly with an already existing amount");
     }
 
     @Test

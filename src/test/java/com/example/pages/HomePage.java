@@ -50,9 +50,9 @@ public class HomePage extends BasePage
     for (int i = 1; i <= amount; i++)
     {
       addItemButton.click();
-      wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath(cardXpath + itemQuantityXpath + "[text()='" + i + "']")));
+      wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath(cardXpath + itemQuantityXpath + "[text()='" + (count + i) + "']")));
     }
-    return (getProductCount(productName) == amount);
+    return (getProductCount(productName) == count + amount);
   }
 
   public boolean decrementProductCount(String productName, int amount)
