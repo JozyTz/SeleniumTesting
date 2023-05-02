@@ -21,10 +21,15 @@ public class HomePage extends BasePage
   private final static String itemQuantityXpath = "//div[@class='item-quantity']/p";
   private final static String addButtonXpath = "//button[@class='btn btn-add-item']";
   private final static String subtractButtonXpath = "//button[@class='btn btn-subtract-item']";
+  private final static String checkoutButtonXpath = "//button[text() = 'Checkout']";
 
   private String getProductCardXpath(String productName)
   {
     return String.format("//div[@class='card-title h5' and text()='%s']/..", productName);
+  }
+
+  public WebElement getCheckoutElement() {
+    return driver.findElement(By.xpath(checkoutButtonXpath));
   }
 
   public boolean isPageLoaded()
